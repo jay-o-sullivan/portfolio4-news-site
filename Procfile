@@ -1,1 +1,1 @@
- web: gunicorn breadit.wsgi 
+ web: gunicorn news_site.wsgi 
