@@ -32,7 +32,7 @@ SECRET_KEY = os.environ.get('SECREY_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [ "https://git.heroku.com/breadit-p4.git", "localhost"]
+ALLOWED_HOSTS = [ "https://git.heroku.com/breadit-p4.git", "8000-jayosulliva-portfolio4n-0470p8yqjpn.ws-eu111.gitpod.io"]
 
 
 # Application definition
@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
+    'django_summernote',
     'breadit',
 ]
 
@@ -64,7 +65,7 @@ ROOT_URLCONF = 'news_site.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [TEMPLATES_DIR],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
